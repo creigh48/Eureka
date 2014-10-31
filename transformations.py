@@ -18,7 +18,6 @@ from moebiusDictionary import mu
 from BinomialDictionary import C
 #-------------------------------------------------------------------------------
 
-#n = Symbol('n', integer=True)
 #---------------------------transformationT1()----------------------------------------
 #@Param: list of integers
 #@Return: list of integers
@@ -442,4 +441,19 @@ def transformationT17(sequence):
 			k = k + 1
 		transformed_list.append(sum_val)
 	return transformed_list
+#----------------------------------------------------------------------------------------
+
+#----------------------------transformationT18()-----------------------------------------
+#@Param: a list of integers
+#@Return: a list of integers
+#@Description: each element of the list undergoes the Partial Products transformation
+#----------------------------------------------------------------------------------------
+def transformationT18(sequence):
+    transformed_list = []
+    prod_val = 1
+    for i in sequence:
+        i = int(i)
+        prod_val = prod_val * i
+        transformed_list.append(prod_val)
+    return transformed_list
 #----------------------------------------------------------------------------------------
