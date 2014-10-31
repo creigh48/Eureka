@@ -2,7 +2,7 @@
 #@filename: transformations.py
 #@author: Jeffrey Creighton
 #@date:2/11/2013
-#@date_modified: 2/19/2014
+#@date_modified: 10/31/2014
 #@Description: This module contains the transformations used in Eureka
 #   Notable changes: as each transform is needed, a check is added if( i != '') to
 #   ensure that there aren't any spaces in the data. This might be problematic when
